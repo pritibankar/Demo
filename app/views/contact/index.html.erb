@@ -1,0 +1,122 @@
+
+
+<div id="header">
+	<!--LOGO-->
+	<a id="logo" href="index.html"><img src="images/logo.png" alt="The Navigator" /></a> 
+	<!--DESCRIPTION-->
+	<h2 id="description">Premium HTML Location Guide</h2>	
+	<!--NAVIGATION MENU-->
+	<div id="navigation">
+		<ul id="dropmenu" class="menu">
+			<!--CURRENT MENU ITEM (class name = current-menu-item)-->
+			<li><a href="index.html">Home</a>
+			<ul class="sub-menu">
+				<li><a href="#">Africa</a></li>
+				<li><a href="#">Asia</a></li>
+				<li><a href="#">Australia</a></li>
+				<li><a href="#">Europe</a></li>
+				<li><a href="#">North America</a></li>
+				<li><a href="#">South America</a></li>
+				<li><a href="#">View All</a></li>
+			</ul>
+			</li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li class="current-menu-item"><a href="contact.html">Contact</a></li>
+			<li><a target="_blank" href="http://themeforest.net/user/themolitor/portfolio?ref=themolitor">Purchase &rarr;</a></li>
+		</ul>
+	</div>
+</div><!--end header-->	
+
+<div id="loading"></div>
+
+<div id="contentContainer">
+<div id="content">
+
+<div id="main">
+	<div id="handle"></div>
+	<div id="closeBox"></div>
+	
+	<h2 class="entrytitle">Contact</h2>
+	
+	<div id="crumbs"><a href="#">Home</a> &nbsp;/&nbsp; <span class="current">Contact</span></div>	
+	<div class="entry">
+	
+	<!--CONTACT FORM-->
+	<form id="contactform"  class="contact" action="send.php" method="post" >
+    	<p>
+    	<label for="name">Name:</label><br /><input type="text" name="name" id="name" value="" class="input" /> 
+    	</p>
+    	<p>
+    	<label for="email">Email:</label><br /><input type="text" name="email" id="email" value="" class="input" /> 
+    	</p>
+    	<p>
+    	<label for="message">Message:</label><br /><textarea name="message" id="message" class="input"></textarea>
+    	</p>
+    	<!--VALUE= EMAIL SUBJECT--><input name="subject" id="subject" type="hidden" value="Website Email Message" />
+    	<!--VALUE= SUCCESS PAGE URL--><input name="pagelink" id="pagelink" type="hidden" value="contact.html" />
+    	<!--VALUE= YOUR EMAIL ADDRESS--><input name="repemail" id="repemail" type="hidden" value="your@email.com" />
+    	<!--VALUE= SUBMIT BUTTON TEXT--><input name="send" id="submit_btn" type="submit" value="Send Message" />
+    </form><!--end contact form-->
+    								
+	</div><!--end entry-->
+		
+</div><!--end main-->
+
+<script type="text/javascript">
+//FULL SCREEN IMAGE
+jQuery.noConflict(); jQuery(document).ready(function(){jQuery.backstretch("images/thumbs/blog.jpg", {speed: 150});});
+</script>
+
+<div id="sidebar">
+<ul>
+<!--WIDGET 1-->
+<li class="widget">
+	<h2 class="widgettitle">Sponsors</h2>			
+	<a href="http://themeforest.net/user/themolitor/portfolio?ref=themolitor">
+		<img src="http://www.lakewaparks.com/wp/wp-content/uploads/2011/07/tf_260x120.gif" alt="ThemeForest" />
+	</a>
+</li><!--end widget-->
+
+<!--WIDGET 2-->
+<li class="widget">
+	<h2 class="widgettitle">Text Widget</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis aliquet commodo. Sed consequat lorem a quam fermentum auctor. Donec quis nisi mi. In vel justo sem, quis iaculis tellus. Sed molestie imperdiet sapien, sed adipiscing tellus imperdiet at. Donec id orci sed elit eleifend luctus.</p>
+</li><!--end widget-->
+
+<!--WIDGET 3-->
+<li class="widget">
+	<h2 class="widgettitle">Tags</h2>
+	<div class="tagcloud">
+		<a href='#'>Africa</a>
+		<a href='#'>All</a>
+		<a href='#'>Argentina</a>
+		<a href='#'>Arizona</a>
+		<a href='#'>Asia</a>
+		<a href='#'>Australia</a>
+		<a href='#'>Brazil</a>
+		<a href='#'>China</a>
+		<a href='#'>Egypt</a>
+		<a href='#'>England</a>
+		<a href='#'>Europe</a>
+		<a href='#'>France</a>
+		<a href='#'>India</a>
+		<a href='#'>Italy</a>
+		<a href='#'>Mexico</a>
+		<a href='#'>New York</a>
+		<a href='#'>North Africa</a>
+		<a href='#'>North America</a>
+		<a href='#'>Paris</a>
+		<a href='#'>Rome</a>
+		<a href='#'>South America</a>
+		<a href='#'>UK</a>
+		<a href='#'>US</a>
+	</div>
+</li><!--end widget-->
+</ul>
+<div class="clear"></div>
+</div><!--end sidebar-->
+
+<div class="clear"></div>
+</div><!--end content-->
+</div><!--end contentContainer-->

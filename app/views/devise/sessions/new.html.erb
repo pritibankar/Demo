@@ -1,0 +1,52 @@
+
+<%= yield %>
+
+<div id="header">
+	<!--LOGO-->
+	<a id="logo" href="index.html"><img src="images/logo.png" alt="The Navigator" /></a> 
+	<!--DESCRIPTION-->
+	<h2 id="description"></h2>	
+	<!--NAVIGATION MENU-->
+	<div id="navigation">
+		<ul id="dropmenu" class="menu">
+			<!--CURRENT MENU ITEM (class name = current-menu-item)-->
+			<li class="current-menu-item"><a href="index.html">Home</a>
+			<ul class="sub-menu">
+				<li><a href="#">Africa</a></li>
+				<li><a href="#">Asia</a></li>
+				<li><a href="#">Australia</a></li>
+				<li><a href="#">Europe</a></li>
+				<li><a href="#">North America</a></li>
+				<li><a href="#">South America</a></li>
+				<li><a href="#">View All</a></li>
+			</ul>
+			</li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a target="_blank" href="http://localhost:3000/users/sign_in">Sign In </a></li>
+		</ul>
+	</div>	
+</div><!--end header-->	
+
+<br>
+<br>
+<br>
+
+<h2>Sign in</h2>
+
+<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+  <p><%= f.label :email %><br />
+  <%= f.email_field :email %></p>
+
+  <p><%= f.label :password %><br />
+  <%= f.password_field :password %></p>
+
+  <% if devise_mapping.rememberable? -%>
+    <p><%= f.check_box :remember_me %> <%= f.label :remember_me %></p>
+  <% end -%>
+
+  <p><%= f.submit "Sign in" %></p>
+<% end %>
+
+<%= render :partial => "devise/shared/links" %>
