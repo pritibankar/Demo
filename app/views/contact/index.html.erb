@@ -1,15 +1,13 @@
-
-
 <div id="header">
 	<!--LOGO-->
 	<a id="logo" href="index.html"><img src="images/logo.png" alt="The Navigator" /></a> 
 	<!--DESCRIPTION-->
-	<h2 id="description">Premium HTML Location Guide</h2>	
+	<h2 id="description"></h2>	
 	<!--NAVIGATION MENU-->
 	<div id="navigation">
 		<ul id="dropmenu" class="menu">
 			<!--CURRENT MENU ITEM (class name = current-menu-item)-->
-			<li><a href="index.html">Home</a>
+			<li><a href="/">Home</a>
 			<ul class="sub-menu">
 				<li><a href="#">Africa</a></li>
 				<li><a href="#">Asia</a></li>
@@ -23,7 +21,7 @@
 			<li><a href="about.html">About</a></li>
 			<li><a href="blog.html">Blog</a></li>
 			<li class="current-menu-item"><a href="contact.html">Contact</a></li>
-			<li><a target="_blank" href="http://themeforest.net/user/themolitor/portfolio?ref=themolitor">Purchase &rarr;</a></li>
+			<li><a target="_blank" href="http://themeforest.net/user/themolitor/portfolio?ref=themolitor">Sign In</a></li>
 		</ul>
 	</div>
 </div><!--end header-->	
@@ -120,3 +118,17 @@ jQuery.noConflict(); jQuery(document).ready(function(){jQuery.backstretch("image
 <div class="clear"></div>
 </div><!--end content-->
 </div><!--end contentContainer-->
+
+<%= form_for :index, :url =>{:action => :index, :controller => "contact"} do |f| %>
+<p> <%= f.label :Name %> </p>
+<p> <%= f.text_field :Name%> </p>
+
+<p> <%= f.label :Email %> </p>
+<p> <%= f.email_field :Email%> </p>
+
+<p> <%= f.label :Message %> </p>
+<p> <%= f.text_area :Message %> </p>
+
+<p> <%= f.submit %> </p>
+
+<% end %>

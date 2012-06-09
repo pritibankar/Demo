@@ -1,1 +1,6 @@
+<% if user_signed_in? %>
+<%= link_to "signout", destroy_user_session_path %>
+<% else %>
+<%= link_to "sign in", new_user_session_path %>
+<% end %>
 <div id="gMap"></div>
